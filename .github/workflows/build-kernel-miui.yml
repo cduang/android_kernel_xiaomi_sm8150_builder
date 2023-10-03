@@ -62,8 +62,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: true
-          repository: Laulan56/anykernel
-          ref: miui-r
+          repository: cduang/AnyKernel3
+          ref: main
           path: anykernel
 
       - name: Setup KernelSU
