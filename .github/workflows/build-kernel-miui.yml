@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         #device: [raphael, cepheus]
-        device: [cepheus]
+        device: [cas]
 
     name: Build MIUI-Kernel-${{ matrix.device }}
     runs-on: ubuntu-latest
@@ -54,8 +54,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: true
-          repository: cduang/android_kernel_xiaomi_sm8150
-          ref: miui
+          repository: cduang/kernel_xiaomi_sm8250
+          ref: LA.UM.9.12.r1-XXXX-SMxx50.QSSI13.0
           path: kernel-source
 
       - name: Checkout Anykernel
